@@ -1,0 +1,20 @@
+
+$color-light-grey: hsl(204, 43%, 93%);
+$color-grayish-blue: hsl(218, 22%, 67%);
+
+$color-cyan-dark: hsl(179, 62%, 43%);
+$color-cyan-light: hsl(179, 62%, 49%);
+
+$color-bright-yellow: hsl(71, 73%, 54%);
+
+$color-black: black;
+
+$color-white: #fff;
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == desktop {
+    @media only screen and (max-width: 37.5rem) {
+      @content
+    }
+  }
+}
